@@ -45,7 +45,7 @@ const _userListForm: React.FC = () => {
         </div>
         <div className={styles.widgetContent}>
         <h2>My role</h2>
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
           <Image src={mafia_reverse} alt="role" width={145} height={160}></Image>Mafia
           <Image src={police_reverse} alt="role" width={145} height={160}></Image>Police
           <Image src={doctor_reverse} alt="role" width={145} height={160}></Image>Doctor
