@@ -26,9 +26,10 @@ const _userListForm: React.FC = () => {
       console.log(users);
     });
 
-    socket.on('roleAssignment', (role: string) => { // 역할 할당을 처리하는 부분 추가
-      setUserRole({ role });
+    socket.on('roleAssignment', (info: {playerName: string; role: string;}) => { 
+      setUserRole({ role: info.role });
     });
+    
 
     socket.on('reloadGame', (user: string) => {
       setUserList(prevUsers => prevUsers.filter(existingUser => existingUser !== user));
